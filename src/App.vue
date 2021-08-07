@@ -5,55 +5,9 @@
 </template>
 
 <script>
-import SvgBigTree from "@/components/SvgBigTree.vue";
-
 export default {
   data() {
-    return {
-      treeDatas: {
-        leftDatas: [],
-        rightDatas: [],
-        mapRelations: [],
-      },
-      options: {
-        svg: {
-          width: "120px",
-        },
-        dragula: {},
-        tree: {
-          left: {
-            navBar: {
-              bg: "rgba(0, 0, 0, 0.5)",
-              width: "10px",
-            },
-            itemHeight: 24,
-          },
-          right: {
-            navBar: {
-              bg: "rgba(0, 0, 0, 0.5)",
-              width: "10px",
-            },
-            itemHeight: 24,
-          },
-        },
-      },
-    };
-  },
-  created() {
-    let nums = 100000;
-    for (let i = 0; i < nums; i++) {
-      this.treeDatas.leftDatas.push({
-        label: new Date().getTime() + i,
-        key: i,
-      });
-      this.treeDatas.rightDatas.push({
-        label: new Date().getTime() + i,
-        key: i,
-      });
-    }
-  },
-  components: {
-    SvgBigTree,
+    return {};
   },
 };
 </script>
